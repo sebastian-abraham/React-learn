@@ -1,10 +1,13 @@
-import { Alerts } from "./components/Alerts";
+import { useState } from "react";
+import Button from "./components/Button";
 function App() {
+  const [color, setColor] = useState("primary");
+  const handleOnClick = () => {
+    setColor("secondary");
+  };
   return (
     <div>
-      <Alerts>
-        Hello <br /> <h1>Hey</h1>
-      </Alerts>
+      <Button OnClick={handleOnClick} color={color}>Hello</Button>
     </div>
   );
 }
