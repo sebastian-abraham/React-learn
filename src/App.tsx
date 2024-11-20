@@ -1,16 +1,10 @@
-import ListGroup from "./components/ListGroup";
+import { Alerts } from "./components/Alerts";
 function App() {
-  let li = ["Why", "How", "wee", "This", "Cant be"];
-  const handleOnSelect = (item: string) => {
-    console.log(item);
-  };
   return (
     <div>
-      <ListGroup
-        items={li}
-        heading="hellow"
-        onSelectItem={handleOnSelect}
-      ></ListGroup>
+      <Alerts>
+        Hello <br /> <h1>Hey</h1>
+      </Alerts>
     </div>
   );
 }
